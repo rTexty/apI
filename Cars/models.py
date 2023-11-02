@@ -6,7 +6,7 @@ class Car(models.Model):
     brands = models.ForeignKey('Brand', on_delete=models.CASCADE)
     model = models.CharField(max_length=100)
     year = models.IntegerField()
-    cat = models.ForeignKey('Category', on_delete=models.CASCADE)
+    cat = models.ForeignKey('Category', on_delete=models.CASCADE,)
 
     def __str__(self):
         return str(self.brands)
