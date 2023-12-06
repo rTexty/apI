@@ -1,0 +1,20 @@
+<!-- task_list.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список задач</title>
+</head>
+<body>
+    <h1>Список задач</h1>
+
+    <form method="POST" action="/api/tasks/">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Сохранить</button>
+
+    </form>
+
+
+</body>
+</html>
